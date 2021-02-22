@@ -137,7 +137,8 @@ class Address extends model
         return $dataReturn;
     }
 
-    public function readOrCreate($params){
+    public function readOrCreate($params)
+    {
         $array = array();
         $dataReturn = array();
 

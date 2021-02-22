@@ -47,7 +47,7 @@ class UserController extends Controller
 
         $states = new State();
         $foundState = $states->readOrCreate($paramsState);
-        if(isset($foundState['success']) && $foundState['success'] == false)
+        if (isset($foundState['success']) && $foundState['success'] == false)
             $this->printErrorJson($foundState['message']);
 
         // Search or create City ----
@@ -58,7 +58,7 @@ class UserController extends Controller
 
         $cities = new City();
         $foundCity = $cities->readOrCreate($paramsCity);
-        if(isset($foundCity['success']) && $foundCity['success'] == false)
+        if (isset($foundCity['success']) && $foundCity['success'] == false)
             $this->printErrorJson($foundCity['message']);
 
         // Search or create Address ----
@@ -69,7 +69,7 @@ class UserController extends Controller
 
         $cities = new Address();
         $foundAddress = $cities->readOrCreate($paramsAddress);
-        if(isset($foundAddress['success']) && $foundAddress['success'] == false)
+        if (isset($foundAddress['success']) && $foundAddress['success'] == false)
             $this->printErrorJson($foundAddress['message']);
 
 
